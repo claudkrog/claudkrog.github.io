@@ -1,0 +1,74 @@
+.active {
+    background-color: #BDAEC6 ;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  background-color: #555555;
+  background-image: url('../images/bg1.png');
+  background-attachment: fixed;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+footer {
+  clear: both;
+  }
+footer p {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+#main {
+  margin-top: 30%;
+  margin-bottom: 30%; 
+}
+
+#cicada-container {
+  /*overflow: auto;*/
+  height: 1200px;
+  padding: 1% 0 0 0;
+	z-index: 1; /*buttons weren't clickable briefly bc of this*/
+	opacity:1;
+	background-size: contain; /* prob just write some js to change picture to */
+	background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url('../images/1-min.png');
+  background-attachment: fixed; /*eventually will add this in js*/
+}
+
+.button.button-primary {
+  background-color: #dab3ff;
+}
+.button.button-primary:hover {
+  background-color: #8fbc8f;
+}
+
+a {
+  color: #c284e1; }
+a:hover {
+  color: #8fbc8f; }
+
+/*hack to put buttons in ok place*/
+#link {
+  position: absolute;
+  /*position: fixed;*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 40%;
+  text-transform: none;
+}
+
+/*remove scrollbar since I only want scrolling in order to move the cicada*/
+::-webkit-scrollbar { 
+      display: none; 
+}
+
